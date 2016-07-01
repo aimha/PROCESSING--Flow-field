@@ -13,7 +13,7 @@ class FlowField {
   
   void init() {
     noiseSeed((int)random(10000));
-    noiseDetail(5,0.75);
+    noiseDetail(8,0.75);
     float xoff =0;
     for (int i = 0; i < cols; i++) {
       float yoff = 0;
