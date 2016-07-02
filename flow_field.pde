@@ -19,6 +19,7 @@ void setup() {
   frameRate(500);
   
   cam = new PeasyCam(this, 0, 0, 0, 700);
+  cam.rotateY(map(random(100),0,100,0,TWO_PI));
   
   m = 5.7;
   n1 = 0.5;
@@ -30,13 +31,13 @@ void setup() {
 }
 
 void draw() {
-  //background(#2F2933);
-  
-  
-  vs.run(flow);  
+  //background(#170413);
+
+  vs.run(flow);
 }
 
 void mousePressed() {
     background(#170413);
     flow = new FlowField(10);
+    cam.rotateY(map(random(100),0,100,0,TWO_PI));
 }
